@@ -2,11 +2,16 @@
 
 buildscript {
     repositories {
-        jcenter()
-        mavenLocal()
+        //国内镜像
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+//        google()
+//        jcenter()
+//        mavenLocal()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:3.5.4'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -15,8 +20,11 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
-        mavenLocal()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+//        jcenter()
+//        mavenLocal()
     }
 }
 

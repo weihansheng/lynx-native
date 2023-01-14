@@ -2,6 +2,9 @@
 .vscode/
 Core/gen/
 Core/gen/*
+Core/.idea/*
 node_modules/
 layout_test/build/
 lepus/build/
+Android/example/.cxx/*
+Android/sdk/.cxx/*

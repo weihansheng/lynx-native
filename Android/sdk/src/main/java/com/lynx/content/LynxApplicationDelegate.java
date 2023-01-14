@@ -4,11 +4,11 @@ package com.lynx.content;
 import android.app.Application;
 import android.content.Context;
 
-import com.lynx.LynxExtModule;
 import com.lynx.content.info.App;
 import com.lynx.content.info.Manifest;
 import com.lynx.core.LynxRuntimeManager;
 import com.lynx.dev.DevSupportManager;
+import com.lynx.modules.ext.LynxModule;
 import com.lynx.resources.ResourceManager;
 
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 public class LynxApplicationDelegate {
     private Application mApplication;
     private Manifest mManifest;
-    private List<LynxExtModule> mLynxExtModules;
+    private List<LynxModule> mLynxExtModules;
     private String mManifestResourceURL = "Asset://manifest.json";
     private LynxContent mLynxContent;
 
@@ -39,7 +39,7 @@ public class LynxApplicationDelegate {
         }
     }
 
-    public void setExtModules(List<LynxExtModule> modules){
+    public void setExtModules(List<LynxModule> modules){
         mLynxExtModules = modules;
     }
 
